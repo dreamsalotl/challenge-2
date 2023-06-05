@@ -4,7 +4,7 @@
 
   :root {
     --primary: rgb(96, 112, 255);
-    --secondary: rgba(146, 204, 206, 1);
+    --secondary: rgb(139, 170, 255);
     --tertiary: rgb(111, 118, 139);
     --dark: rgba(28, 29, 33, 1);
     --light: rgb(205, 205, 255);
@@ -33,27 +33,25 @@
   }
 
   header {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
-    background-color: var(--secondary);
+    background-color: var(--light);
   }
   
   header h1 {
+    display: flex;
+    justify-content: center;
     color: var(--tertiary);
-    background-color: var(--secondary);
+    background-color: var(--light);
     padding: 2% 5%;
     margin: 0%;
-    font-size: 4vw;
+    font-size: 50px;
     line-height: 1;
   }
 
   nav {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content:space-evenly;
   }
   
   nav a {
@@ -61,19 +59,9 @@
     padding: 5px 60px;
     color: var(--tertiary);
     margin-right: 10px;
-    background-image: (270deg, var(--secondary) 0%, var(--secondary) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: bottom;
-    transition: all 0.25s ease-in;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   
   nav a:hover {
-    background-size: 100% 100%;
-    color: var(--primary);
-  }
-  
-  nav a:last-child {
-    margin-right: 0;
+    
   }
