@@ -116,15 +116,17 @@
 }
 
 @media screen and (max-width: 576px)  {
-  body {
+  header nav {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    justify-content: space-around;
   }
-
+  header nav a {
+    padding: 3px;
+    font-size: 16px;
+  }
   header h1 {
     justify-content: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 
   header h2 {
@@ -147,6 +149,7 @@
     padding: 20px;
    }
    .about-me {
+    max-width: 100%;
     display: flex;
     justify-content: center;
    }
