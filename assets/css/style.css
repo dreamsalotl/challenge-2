@@ -162,6 +162,14 @@
   margin: 10px;
   border:solid 2px var(--tertiary);
   border-radius: 10px;
+  transition: background-color ease-in-out 100ms
+}
+
+.project-1:hover,
+.project-2:hover,
+.project-3:hover,
+.project-4:hover {
+  background-color: rgba(66, 66, 66, 0.37);
 }
 /*
  ----------------Media query section--------------------
