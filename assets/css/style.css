@@ -5,17 +5,18 @@
   :root {
     --primary: rgb(96, 112, 255);
     --secondary: rgb(139, 170, 255);
-    --tertiary: rgb(111, 118, 139);
+    --tertiary: rgb(60, 60, 67);
     --dark: rgba(28, 29, 33, 1);
     --light: rgb(205, 205, 255);
+    --light-text: rgb(159, 159, 159);
   }
   
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:monospace;
     color: var(--primary);
-    background-color: var(--light);
+    background-color: var(--light-text);
     line-height: 1.5;
   }
   
@@ -40,24 +41,27 @@
   
   header h1 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     color: var(--tertiary);
-    background-color: var(--light);
-    padding: 2% 5%;
+    background-color: var(--light-text);
+    padding: 5% 5%;
     margin: 0%;
-    font-size: 50px;
+    font-size: 120px;
     line-height: 1;
   }
 
   nav {
+    background-color: var(--tertiary);
     display: flex;
-    justify-content:space-evenly;
+    justify-content:center;
+    padding: 10px;
+
   }
   
   nav a {
     text-decoration: none;
     padding: 5px 60px;
-    color: var(--tertiary);
+    color: var(--light-text);
     margin-right: 10px;
     font-size: 1.3rem;
   }
@@ -65,3 +69,16 @@
   nav a:hover {
     
   }
+
+  .nyan {
+    height: 860px;
+    width: 2400px;
+    
+  }
+
+  #nyan-gif {
+    padding-top: 400px;
+    float: right;
+  }
+
+  
