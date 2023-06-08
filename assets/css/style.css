@@ -103,14 +103,24 @@
   }
 
 .about {
+  text-align: center;
   width: 2400px;
   height: 1300px;
 }
 
 .about h2 {
-  padding: 5%;
-  text-align: center;
+  padding: 200px;
   font-size: 50px;
+}
+
+.about div {
+  display: flex;
+  justify-content: center;
+}
+.about p {
+  height: 500px;
+  width: 500px;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 576px)  {
@@ -149,7 +159,21 @@
    .about {
     max-width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 500px;
    }
+   .about h2 {
+    font-size: 30px;
+    padding: 200px 50px 50px 50px;
+   }
+   .about div {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+   }
+   .about p {
+    height: 300px;
+    width: 300px;
+    font-size: 20px;
   }
