@@ -88,7 +88,8 @@
   }
   
   nav a:hover {
-    
+    border: 1px solid gray;
+    border-radius: 5px;
   }
 
   .nyan {
@@ -106,6 +107,7 @@
   text-align: center;
   width: 2400px;
   height: 1300px;
+  margin-bottom: 700px;
 }
 
 .about h2 {
@@ -122,6 +124,45 @@
   width: 500px;
   font-size: 30px;
 }
+
+.work {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 1500px;
+}
+
+.work h2 {
+  font-size: 50px;
+  padding: 200px;
+}
+
+.work div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 100%
+}
+.project-1 {
+  height: 500px;
+}
+
+.project-2,
+.project-3,
+.project-4 {
+  height: 100px;
+}
+.project-1,
+.project-2,
+.project-3,
+.project-4 {
+  max-width: 1000px;
+}
+/*
+ ----------------Media query section--------------------
+ */
 
 @media screen and (max-width: 576px)  {
   header nav {
