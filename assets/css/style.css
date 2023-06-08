@@ -71,17 +71,15 @@
 
   nav {
     background-color: var(--tertiary);
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 0 0;
-    justify-content:center;
+    display: block;
+    position: fixed;
+    width: 100%;
     padding: 10px;
+    text-align: center;
 
   }
   
   nav a {
-    display: flex;
-    justify-content: center;
     text-decoration: none;
     padding: 5px 60px;
     color: var(--light-text);
@@ -104,12 +102,12 @@
     float: right;
   }
 
-.about-me {
+.about {
   width: 2400px;
   height: 1300px;
 }
 
-.about-me h2 {
+.about h2 {
   padding: 5%;
   text-align: center;
   font-size: 50px;
@@ -117,8 +115,7 @@
 
 @media screen and (max-width: 576px)  {
   header nav {
-    display: flex;
-    justify-content: space-around;
+    position: fixed;
   }
   header nav a {
     padding: 3px;
@@ -126,6 +123,7 @@
   }
   header h1 {
     justify-content: center;
+    padding-top: 150px;
     font-size: 30px;
 }
 
@@ -148,9 +146,10 @@
     width: 45%;
     padding: 20px;
    }
-   .about-me {
+   .about {
     max-width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 500px;
    }
   }
