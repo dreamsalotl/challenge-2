@@ -146,6 +146,8 @@
   width: 100%
 }
 .project-1 {
+  background-image: url(https://www.pbs.org/wnet/nature/files/2021/05/frog-1280x720.png);
+  background-repeat: no-repeat;
   height: 500px;
 }
 
@@ -162,14 +164,27 @@
   margin: 10px;
   border:solid 2px var(--tertiary);
   border-radius: 10px;
-  transition: background-color ease-in-out 100ms
+  filter: grayscale();
+  transition: ease-in-out 500ms
 }
 
 .project-1:hover,
 .project-2:hover,
 .project-3:hover,
 .project-4:hover {
-  background-color: rgba(66, 66, 66, 0.37);
+  filter: none
+}
+
+.project-1 h3,
+.project-2 h3,
+.project-3 h3,
+.project-4 h3 {
+  background-color: var(--tertiary);
+  color: var(--light-text);
+  font-size: 25px;
+  padding: 0 20px 0 20px;
+  border: 0px 2px 2px 2px;
+  border-style: solid;
 }
 /*
  ----------------Media query section--------------------
