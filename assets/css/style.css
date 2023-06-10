@@ -200,6 +200,12 @@
   border: 0px 2px 2px 2px;
   border-style: solid;
 }
+
+.contact {
+  max-width: 1000px;
+  width: 2400px;
+  height: 1300px;
+}
 /*
  ----------------Media query section--------------------
  */
