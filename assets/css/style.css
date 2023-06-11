@@ -202,9 +202,32 @@
 }
 
 .contact {
-  max-width: 1000px;
-  width: 2400px;
+  display: flex;
+  flex-direction: column;
   height: 1300px;
+}
+
+.contact h2 {
+  padding: 200px;
+  font-size: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#twitter,
+#github,
+#email {
+  filter: brightness(0%);
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
 }
 /*
  ----------------Media query section--------------------
@@ -250,6 +273,7 @@
     justify-content: center;
     margin-top: 400px;
    }
+   .contact h2,
    .work h2,
    .about h2 {
     font-size: 29px;
@@ -275,5 +299,11 @@
   .projects {
     max-width: 100%;
     padding: 40px;
+  }
+  #twitter,
+  #github,
+  #email {
+    height: 80px;
+    width: 80px;
   }
 }
