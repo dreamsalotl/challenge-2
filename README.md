@@ -12,6 +12,10 @@ N/A
 
 The navigation bar at the top of the page will move you to different sections with ease. There are also links to my email, Github repos, and Twitter.
 
+![Alt text](image.png)
+
+![Alt text](image-1.png)
+
 ## Credits
 
 N/A
